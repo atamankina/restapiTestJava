@@ -22,5 +22,26 @@
   		<artifactId>httpclient</artifactId>
   		<version>4.5.3</version>
   	</dependency>
+  	<dependency>
+  		<groupId>com.jayway.restassured</groupId>
+  		<artifactId>rest-assured</artifactId>
+  		<version>2.9.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.codehaus.groovy</groupId>
+  		<artifactId>groovy-all</artifactId>
+  		<version>2.4.11</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.json</groupId>
+  		<artifactId>json</artifactId>
+  		<version>20150729</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.fasterxml.jackson.module</groupId>
+  		<artifactId>jackson-modules-java8</artifactId>
+  		<version>2.9.0.pr3</version>
+  		<type>pom</type>
+  	</dependency>
   </dependencies>
 </project>
