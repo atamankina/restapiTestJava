@@ -3,6 +3,7 @@
  */
 package com.example.tests;
 
+import java.io.File;
 import java.io.IOException;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
@@ -16,7 +17,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jayway.restassured.response.Response;
 import static com.jayway.restassured.RestAssured.get;
 import static org.junit.Assert.*;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
@@ -43,7 +44,7 @@ public class RestAPITest {
 			     response.getStatusLine().getStatusCode(),
 			     HttpStatus.SC_OK);
 		}catch(AssertionError ae)
-				{	System.err.println("Status code is NOT 200 as expected.");
+				{	System.out.println("Status code is NOT 200 as expected.");
 					ae.printStackTrace();
 					return;}
 		
@@ -67,7 +68,7 @@ public class RestAPITest {
 			     response.getStatusLine().getStatusCode(),
 			     HttpStatus.SC_BAD_REQUEST);
 		}catch(AssertionError ae)
-		{	System.err.println("Status code is NOT 400 as expected.");
+		{	System.out.println("Status code is NOT 400 as expected.");
 			ae.printStackTrace();
 			return;}
 		
@@ -93,7 +94,7 @@ public class RestAPITest {
 		try{
 		assertEquals(jsonMimeType, mimeType );
 		}catch(AssertionError ae)
-		{	System.err.println("Media type is NOT application/json as expected.");
+		{	System.out.println("Media type is NOT application/json as expected.");
 			ae.printStackTrace();
 			return;}
 		
@@ -122,7 +123,7 @@ public class RestAPITest {
 		try{
 		assertEquals(expected, actual);
 		}catch(AssertionError ae)
-		{	System.err.println("The value is not as expected for the key: " + key);
+		{	System.out.println("The value is not as expected for the key: " + key);
 			ae.printStackTrace();
 			return;}
 		
@@ -132,16 +133,16 @@ public class RestAPITest {
 	/**
 	 * Test to verify if the response schema matches the expected JSON schema
 	 * @param url = request URL
-	 * @param classpath
+	 * @param file = json schema file
 	 */
-	public void verifyResponseJsonSchema(String url, String classpath){
+	public void verifyResponseJsonSchema(String url, File file){
 		//using rest-assure library
 		Response response = get(url);		 
 		
 		try{
-		assertThat(response.asString(), matchesJsonSchemaInClasspath(classpath));
+		assertThat(response.asString(), matchesJsonSchema(file));
 		}catch(AssertionError ae)
-		{	System.err.println("The response schema doesn't match the expected schema.");
+		{	System.out.println("The response schema doesn't match the expected schema.");
 			ae.printStackTrace();
 			return;}
 		

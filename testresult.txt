@@ -1,0 +1,19 @@
+Verify response status code 200...
+Test result for the correct request: https://weather.cit.api.here.com/weather/1.0/report.json?product=observation&name=Barcelona&app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg
+Status code is 200 as expected.
+Test result for the incorrect request: https://weather.cit.api.here.com/weather/1.0/report.json?product=observation&app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg
+Verify response status code 400...
+Test result for the correct request:
+Test result for the incorrect request:
+Status code is 400 as expected.
+Verify response media type...
+Test result for the matching media type:
+Media type is application/json as expected.
+Test result for the not matching media type:
+Verify expected values for specific attributes...
+Test results for correct values:
+The value is as expected for the key: city
+The value is as expected for the key: country
+Test results for incorrect values:
+Verify JSON schema of the response...
+Test results for the correct JSON schema:

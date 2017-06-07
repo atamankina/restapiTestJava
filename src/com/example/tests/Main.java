@@ -4,6 +4,7 @@
  */
 package com.example.tests;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.apache.http.client.ClientProtocolException;
@@ -35,6 +36,9 @@ public class Main {
 		String schema_classpath = "weather_schema.json";
 		String wrong_schema = "wrong_schema.json";
 		
+		File schemagood = new File("./schemas/weather_schema.json");
+		File schemabad = new File("./schemas/wrong_schema.json");
+		
 		//Tests
 		RestAPITest rt = new RestAPITest();
 		System.out.println("Verify response status code 200...");
@@ -65,9 +69,9 @@ public class Main {
 		
 		System.out.println("Verify JSON schema of the response...");
 		System.out.println("Test results for the correct JSON schema:");
-		rt.verifyResponseJsonSchema(correct_url, schema_classpath);
+		rt.verifyResponseJsonSchema(correct_url, schemagood);
 		System.out.println("Test results for the incorrect JSON schema:");
-		rt.verifyResponseJsonSchema(correct_url, wrong_schema);
+		rt.verifyResponseJsonSchema(correct_url, schemabad);
 		
 		System.out.println("Tests done.");
 	
