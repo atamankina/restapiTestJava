@@ -1,0 +1,230 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "feedCreation": {
+            "id": "/properties/feedCreation",
+            "type": "string"
+        },
+        "metric": {
+            "id": "/properties/metric",
+            "type": "boolean"
+        },
+        "observations": {
+            "id": "/properties/observations",
+            "properties": {
+                "location": {
+                    "id": "/properties/observations/properties/location",
+                    "items": {
+                        "id": "/properties/observations/properties/location/items",
+                        "properties": {
+                            "city": {
+                                "id": "/properties/observations/properties/location/items/properties/city",
+                                "type": "string"
+                            },
+                            "country": {
+                                "id": "/properties/observations/properties/location/items/properties/country",
+                                "type": "string"
+                            },
+                            "distance": {
+                                "id": "/properties/observations/properties/location/items/properties/distance",
+                                "type": "number"
+                            },
+                            "latitude": {
+                                "id": "/properties/observations/properties/location/items/properties/latitude",
+                                "type": "number"
+                            },
+                            "longitude": {
+                                "id": "/properties/observations/properties/location/items/properties/longitude",
+                                "type": "number"
+                            },
+                            "observation": {
+                                "id": "/properties/observations/properties/location/items/properties/observation",
+                                "items": {
+                                    "id": "/properties/observations/properties/location/items/properties/observation/items",
+                                    "properties": {
+                                        "activeAlerts": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/activeAlerts",
+                                            "type": "string"
+                                        },
+                                        "ageMinutes": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/ageMinutes",
+                                            "type": "string"
+                                        },
+                                        "airDescription": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/airDescription",
+                                            "type": "string"
+                                        },
+                                        "airInfo": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/airInfo",
+                                            "type": "string"
+                                        },
+                                        "barometerPressure": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/barometerPressure",
+                                            "type": "string"
+                                        },
+                                        "barometerTrend": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/barometerTrend",
+                                            "type": "string"
+                                        },
+                                        "city": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/city",
+                                            "type": "string"
+                                        },
+                                        "comfort": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/comfort",
+                                            "type": "string"
+                                        },
+                                        "country": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/country",
+                                            "type": "string"
+                                        },
+                                        "daylight": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/daylight",
+                                            "type": "string"
+                                        },
+                                        "description": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/description",
+                                            "type": "string"
+                                        },
+                                        "dewPoint": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/dewPoint",
+                                            "type": "string"
+                                        },
+                                        "distance": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/distance",
+                                            "type": "number"
+                                        },
+                                        "elevation": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/elevation",
+                                            "type": "number"
+                                        },
+                                        "highTemperature": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/highTemperature",
+                                            "type": "string"
+                                        },
+                                        "humidity": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/humidity",
+                                            "type": "string"
+                                        },
+                                        "icon": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/icon",
+                                            "type": "string"
+                                        },
+                                        "iconLink": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/iconLink",
+                                            "type": "string"
+                                        },
+                                        "iconName": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/iconName",
+                                            "type": "string"
+                                        },
+                                        "latitude": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/latitude",
+                                            "type": "number"
+                                        },
+                                        "longitude": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/longitude",
+                                            "type": "number"
+                                        },
+                                        "lowTemperature": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/lowTemperature",
+                                            "type": "string"
+                                        },
+                                        "precipitation12H": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/precipitation12H",
+                                            "type": "string"
+                                        },
+                                        "precipitation1H": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/precipitation1H",
+                                            "type": "string"
+                                        },
+                                        "precipitation24H": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/precipitation24H",
+                                            "type": "string"
+                                        },
+                                        "precipitation3H": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/precipitation3H",
+                                            "type": "string"
+                                        },
+                                        "precipitation6H": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/precipitation6H",
+                                            "type": "string"
+                                        },
+                                        "precipitationDesc": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/precipitationDesc",
+                                            "type": "string"
+                                        },
+                                        "skyDescription": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/skyDescription",
+                                            "type": "string"
+                                        },
+                                        "skyInfo": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/skyInfo",
+                                            "type": "string"
+                                        },
+                                        "snowCover": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/snowCover",
+                                            "type": "string"
+                                        },
+                                        "state": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/state",
+                                            "type": "string"
+                                        },
+                                        "temperature": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/temperature",
+                                            "type": "string"
+                                        },
+                                        "temperatureDesc": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/temperatureDesc",
+                                            "type": "string"
+                                        },
+                                        "utcTime": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/utcTime",
+                                            "type": "string"
+                                        },
+                                        "visibility": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/visibility",
+                                            "type": "string"
+                                        },
+                                        "windDesc": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/windDesc",
+                                            "type": "string"
+                                        },
+                                        "windDescShort": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/windDescShort",
+                                            "type": "string"
+                                        },
+                                        "windDirection": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/windDirection",
+                                            "type": "string"
+                                        },
+                                        "windSpeed": {
+                                            "id": "/properties/observations/properties/location/items/properties/observation/items/properties/windSpeed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            },
+                            "state": {
+                                "id": "/properties/observations/properties/location/items/properties/state",
+                                "type": "string"
+                            },
+                            "timezone": {
+                                "id": "/properties/observations/properties/location/items/properties/timezone",
+                                "type": "number"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}
